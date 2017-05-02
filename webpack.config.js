@@ -22,6 +22,10 @@ module.exports = {
   },
   resolve: {
     root: __dirname,
+    modulesDirectories: [
+      'node_modules',
+      './app/components'
+    ],
     alias: {
       applicationStyles: 'app/styles/app.scss'
     },
@@ -46,10 +50,3 @@ module.exports = {
   },
   devtool: 'inline-source-map'
 };
-
-
-// //Due to a library bug there is a small issue in the next video. In the next lecture you'll learn how to setup source maps by setting a "devtool" property in webpack.config.js. In the lecture I set the value to "cheap-module-eval-source-map". This might cause the source maps to not work as shown in the video.
-//
-// If you are getting this error, try setting the value to either "inline-source-map" or "eval-source-map" instead.
-//
-// As always, I'm here if you run into any issue or have any questions.
