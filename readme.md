@@ -17,5 +17,5 @@ How To Use
 ==========
 - Download or Clone this Repo
 - Run 'npm install' to get all the dependencies
-- Run 'npm server' to start the server which will host on the local port 3000
+- Run 'node server' to start the server which will host on the local port 3000
 - Run 'npm test' to run tests
